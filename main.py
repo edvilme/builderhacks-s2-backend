@@ -1,7 +1,7 @@
 from urllib import request
 from flask import Flask, request
 import comparisons
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
@@ -13,10 +13,12 @@ cors = CORS(app, resource={
 })
 
 @app.route("/")
+@cross_origin()
 def hello_world():
     return "Hello world from edvilme!!"
 
 @app.route("/test", methods=["POST"])
+@cross_origin()
 def test():
     submission = request.get_json(force=True)
     submission_type = submission['type']
