@@ -15,7 +15,7 @@ def test():
     submission_submission = submission['submission']
     submission_answer = submission['answer']
     try:
-        if(submission_type == "comparison_text_string"):
+        if(submission_type == "comparison_text_strict"):
             return {
                 "correct": comparisons.comparison_text_strict(submission_submission, submission_answer)
             }
