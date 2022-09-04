@@ -1,8 +1,16 @@
 from urllib import request
 from flask import Flask, request
 import comparisons
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+CORS(app)
+cors = CORS(app, resource={
+    r"/*":{
+        "origins":"*"
+    }
+})
 
 @app.route("/")
 def hello_world():
