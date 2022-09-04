@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello_world():
     return "Hello world from edvilme!!"
 
-@app.route("/test")
+@app.route("/test", methods=["POST"])
 def test():
     submission = request.get_json(force=True)
     submission_type = submission['type']
