@@ -11,4 +11,4 @@ def test():
     return "This is a test"
 
 if __name__ == "__main__":
-    app.run(port=3000)
+    app.run(port=8080, host='0.0.0.0')
