@@ -1,7 +1,8 @@
 import string
 import spacy
 from quantulum3 import parser
-from latex2sympy import latex2sympy
+import sympy
+from latex2sympy2 import latex2sympy
 nlp = spacy.load("en_core_web_sm")
 
 

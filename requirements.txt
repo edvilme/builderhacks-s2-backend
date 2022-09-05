@@ -1,3 +1,4 @@
+antlr4-python3-runtime==4.7.2
 blis==0.7.8
 catalogue==2.0.8
 certifi==2022.6.15
@@ -14,7 +15,7 @@ inflect==6.0.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
 langcodes==3.3.0
-latex2sympy==1.0.3
+latex2sympy2==1.7.8
 MarkupSafe==2.1.1
 mpmath==1.2.1
 murmurhash==1.0.8

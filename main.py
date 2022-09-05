@@ -15,7 +15,7 @@ cors = CORS(app, resource={
 @app.route("/")
 @cross_origin()
 def hello_world():
-    return "Hello world from edvilme!! v.1.1"
+    return "Hello world from edvilme!! v.1.2"
 
 @app.route("/test", methods=["POST"])
 @cross_origin()
